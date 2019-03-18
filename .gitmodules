@@ -1,0 +1,6 @@
+[submodule "vim-go"]
+	path = plugged/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "molokai"]
+	path = plugged/molokai
+	url = https://github.com/fatih/molokai.git
