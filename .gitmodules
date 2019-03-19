@@ -4,3 +4,6 @@
 [submodule "molokai"]
 	path = plugged/molokai
 	url = https://github.com/fatih/molokai.git
+[submodule "vim-javascript"]
+	path = plugged/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
