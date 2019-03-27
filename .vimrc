@@ -3,7 +3,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 set autowrite
 :nnoremap <space> dd
 set number
-
+set wildmenu
 
 "persistent undo
 set undofile               
