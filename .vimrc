@@ -11,7 +11,6 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000         
 set undoreload=10000         
 
-
 "Go settings
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
@@ -44,3 +43,8 @@ let g:javascript_plugin_flow = 1
 Plug 'skywind3000/asyncrun.vim'
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
 
+"C++ settings
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_templat_highlight = 1
