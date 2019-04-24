@@ -39,3 +39,8 @@ let g:go_highlight_extra_types = 1
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
+
+"eslint runs after every write
+Plug 'skywind3000/asyncrun.vim'
+autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
+

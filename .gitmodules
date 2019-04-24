@@ -7,3 +7,6 @@
 [submodule "vim-javascript"]
 	path = plugged/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-clang"]
+	path = bundle/vim-clang
+	url = https://github.com/justmao945/vim-clang
