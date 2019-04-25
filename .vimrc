@@ -4,7 +4,6 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set omnifunc=syntaxcomplete#Complete
 set backspace=indent,eol,start
 colo molokai
 set encoding=utf-8
@@ -19,6 +18,12 @@ set wildmenu
 autocmd StdinReadPre * let s:std_in=1
 :nnoremap <C-g> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+"""Start NERBTree up by default
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"NERDCommenter settings 
+let g:NERDSpaceDelims = 1
 
 "persistent undo
 set undofile               
