@@ -56,6 +56,8 @@ let g:go_highlight_extra_types = 1
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+
 
 "eslint runs after every write
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
