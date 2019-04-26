@@ -1,6 +1,9 @@
 [submodule "vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible
 [submodule "molokai"]
 	path = bundle/molokai
 	url = https://github.com/fatih/molokai.git
@@ -37,3 +40,10 @@
 [submodule "bundle/vim-graphql"]
 	path = bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+
