@@ -14,6 +14,7 @@ set autowrite
 set number
 set wildmenu
 set wildmode=longest:full,full
+set noro
 
 "NERDTree settings
 autocmd StdinReadPre * let s:std_in=1
@@ -22,6 +23,12 @@ let NERDTreeShowHidden=1
 """Start NERBTree up by default
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"Speed up moving between buffers
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "NERDCommenter settings 
 let g:NERDSpaceDelims = 1
@@ -57,13 +64,17 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-
+autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab
+autocmd FileType css set tabstop=2 shiftwidth=2 expandtab
+autocmd FileType css setlocal ts=2 sts=2 sw=2
+autocmd FileType html set tabstop=2 shiftwidth=2 expandtab
+autocmd FileType html setlocal ts=2 sts=2 sw=2
 
 "eslint runs after every write
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
 
 "Python settings
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 autoindent textwidth=79 fileformat=unix
 
 "C++ settings
 let g:cpp_class_scope_highlight = 1
