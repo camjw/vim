@@ -30,6 +30,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+"Quicker find and replace 
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
 "NERDCommenter settings 
 let g:NERDSpaceDelims = 1
 
@@ -81,4 +84,5 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_templat_highlight = 1
-
+autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent fileformat=unix
+autocmd Filetype hpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent fileformat=unix
