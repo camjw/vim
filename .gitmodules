@@ -47,3 +47,6 @@
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx
 
+[submodule "bundle/Dockerfile"]
+	path = bundle/Dockerfile
+	url = https://github.com/ekalinin/Dockerfile.vim
