@@ -15,6 +15,10 @@ set number
 set wildmenu
 set wildmode=longest:full,full
 set noro
+set hlsearch
+
+"Unhighlight after searching
+:nnoremap <silent> <leader>/ :nohlsearch<Bar>:echo<CR>
 
 "NERDTree settings
 autocmd StdinReadPre * let s:std_in=1
