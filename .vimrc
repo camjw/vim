@@ -83,6 +83,9 @@ autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --
 "Python settings
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 autoindent textwidth=79 fileformat=unix
 
+"Kotlin settings
+autocmd Filetype kotlin setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 autoindent fileformat=unix
+
 "C++ settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
