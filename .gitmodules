@@ -52,3 +52,6 @@
 [submodule "bundle/Dockerfile"]
 	path = bundle/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "bundle/vim-tslint"]
+	path = bundle/vim-tslint
+	url = https://github.com/heavenshell/vim-tslint
