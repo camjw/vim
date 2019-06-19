@@ -60,4 +60,4 @@
 	url = https://github.com/tikhomirov/vim-glsl
 [submodule "bundle/Jenkinsfile-vim-syntax"]
 	path = bundle/Jenkinsfile-vim-syntax
-	url = https://github.com/camjw/Jenkinsfile-vim-syntax.git
+	url = https://github.com/martinda/Jenkinsfile-vim-syntax.git
