@@ -16,6 +16,7 @@ set wildmenu
 set wildmode=longest:full,full
 set noro
 set hlsearch
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
 "Unhighlight after searching
 :nnoremap <silent> <leader>/ :nohlsearch<Bar>:echo<CR>
@@ -70,8 +71,11 @@ let g:go_highlight_extra_types = 1
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab
+autocmd FileType typescript setlocal ts=2 sts=2 sw=2
+autocmd FileType typescript set tabstop=2 shiftwidth=2 expandtab
 autocmd FileType css set tabstop=2 shiftwidth=2 expandtab
 autocmd FileType css setlocal ts=2 sts=2 sw=2
 autocmd FileType html set tabstop=2 shiftwidth=2 expandtab
@@ -91,5 +95,6 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_templat_highlight = 1
+let g:ycm_show_diagnostics_ui = 0
 autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent fileformat=unix
 autocmd Filetype hpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent fileformat=unix
