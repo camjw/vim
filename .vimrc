@@ -16,7 +16,7 @@ set wildmenu
 set wildmode=longest:full,full
 set noro
 set hlsearch
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 "Unhighlight after searching
 :nnoremap <silent> <leader>/ :nohlsearch<Bar>:echo<CR>
